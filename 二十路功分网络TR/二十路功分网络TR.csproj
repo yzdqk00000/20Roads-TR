@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CB833656-6CC9-49CE-A46E-874EBE9AE5F7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>二十路功分网络TR</RootNamespace>
+    <AssemblyName>二十路功分网络TR</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon-20181129011336436.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v17.1" />
+    <Reference Include="DevExpress.Charts.v17.1.Core, Version=17.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v17.1" />
+    <Reference Include="DevExpress.DataAccess.v17.1, Version=17.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v17.1.UI, Version=17.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v17.1.Core, Version=17.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v17.1.Core" />
+    <Reference Include="DevExpress.RichEdit.v17.1.Core, Version=17.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Spreadsheet.v17.1.Core, Version=17.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v17.1" />
+    <Reference Include="DevExpress.Utils.v17.1.UI, Version=17.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v17.1" />
+    <Reference Include="DevExpress.Sparkline.v17.1.Core" />
+    <Reference Include="DevExpress.XtraCharts.v17.1, Version=17.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v17.1" />
+    <Reference Include="DevExpress.XtraGrid.v17.1, Version=17.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v17.1, Version=17.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v17.1, Version=17.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v17.1, Version=17.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraSpreadsheet.v17.1, Version=17.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v17.1, Version=17.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstrLibrary\InstrDriver\AGT\agvisa32.cs" />
+    <Compile Include="InstrLibrary\InstrDriver\AGT\visa32.cs" />
+    <Compile Include="InstrLibrary\InstrDriver\InstrBase.cs" />
+    <Compile Include="InstrLibrary\InstrDriver\SCPIBase.cs" />
+    <Compile Include="InstrLibrary\InstrObject\NetWorkAnalyzer-矢网\CETC41-41所\NetWorkAnalyzerSCPIBase_CETC41.cs" />
+    <Compile Include="InstrLibrary\InstrObject\NetWorkAnalyzer-矢网\Keysight-是德科技\AGT872ES_SCPI.cs" />
+    <Compile Include="InstrLibrary\InstrObject\NetWorkAnalyzer-矢网\Keysight-是德科技\N9030B.cs" />
+    <Compile Include="InstrLibrary\InstrObject\NetWorkAnalyzer-矢网\Keysight-是德科技\NetWorkAnalyzerSCPIBase_Keysight.cs" />
+    <Compile Include="InstrLibrary\InstrObject\NetWorkAnalyzer-矢网\Keysight-是德科技\NXXXX.cs" />
+    <Compile Include="InstrLibrary\InstrObject\NetWorkAnalyzer-矢网\NetWorkAnalyzerBase.cs" />
+    <Compile Include="InstrLibrary\InstrObject\NetWorkAnalyzer-矢网\RS-罗德与施瓦茨\NetWorkAnalyzerSCPIBase_RS.cs" />
+    <Compile Include="InstrLibrary\InstrObject\NoiseMeter-噪声仪\CETC41-41所\NoiseMeterSCPIBase_CETC41.cs" />
+    <Compile Include="InstrLibrary\InstrObject\NoiseMeter-噪声仪\Keysight-是德科技\NoiseMeterSCPIBase_Keysight.cs" />
+    <Compile Include="InstrLibrary\InstrObject\NoiseMeter-噪声仪\NoiseMeterBase.cs" />
+    <Compile Include="InstrLibrary\InstrObject\NoiseMeter-噪声仪\RS-罗德与施瓦茨\NoiseMeterSCPIBase_RS.cs" />
+    <Compile Include="InstrLibrary\InstrObject\Oscilloscope-示波器\CETC41-41所\OscilloscopeSCPIBase_CETC41.cs" />
+    <Compile Include="InstrLibrary\InstrObject\Oscilloscope-示波器\Keysight-是德科技\OscilloscopeSCPIBase_Keysight.cs" />
+    <Compile Include="InstrLibrary\InstrObject\Oscilloscope-示波器\OscilloscopeBase.cs" />
+    <Compile Include="InstrLibrary\InstrObject\Oscilloscope-示波器\RS-罗德与施瓦茨\OscilloscopeSCPIBase_RS.cs" />
+    <Compile Include="InstrLibrary\InstrObject\PowerMeter-功率计\CETC41-41所\PowerMeterSCPIBase_CETC41.cs" />
+    <Compile Include="InstrLibrary\InstrObject\PowerMeter-功率计\Keysight-是德科技\PowerMeterSCPIBase_Keysight.cs" />
+    <Compile Include="InstrLibrary\InstrObject\PowerMeter-功率计\PowerMeterBase.cs" />
+    <Compile Include="InstrLibrary\InstrObject\PowerMeter-功率计\RS-罗德与施瓦茨\PowerMeterSCPIBase_RS.cs" />
+    <Compile Include="InstrLibrary\InstrObject\PowerSupply-程控电源\GW-固纬\PowerSupplySCPIBase_GW_PPT.cs" />
+    <Compile Include="InstrLibrary\InstrObject\PowerSupply-程控电源\GW-固纬\PowerSupplySCPIBase_GW_PSW.cs" />
+    <Compile Include="InstrLibrary\InstrObject\PowerSupply-程控电源\PowerSupplyBase.cs" />
+    <Compile Include="InstrLibrary\InstrObject\SignalAnalyzer-信号分析仪\CETC41-41所\SignalAnalyzerSCPIBase_CETC41.cs" />
+    <Compile Include="InstrLibrary\InstrObject\SignalAnalyzer-信号分析仪\Keysight-是德科技\SignalAnalyzerSCPIBase_Keysight.cs" />
+    <Compile Include="InstrLibrary\InstrObject\SignalAnalyzer-信号分析仪\RS-罗德与施瓦茨\SignalAnalyzerSCPIBase_RS.cs" />
+    <Compile Include="InstrLibrary\InstrObject\SignalAnalyzer-信号分析仪\SignalAnalyzerBase.cs" />
+    <Compile Include="InstrLibrary\InstrObject\SignalGenerator-信号源%28射频微波信号发生器%29\CETC41-41所\SignalGeneratorSCPIBase_CETC41.cs" />
+    <Compile Include="InstrLibrary\InstrObject\SignalGenerator-信号源%28射频微波信号发生器%29\Keysight-是德科技\SignalGeneratorSCPIBase_Keysight.cs" />
+    <Compile Include="InstrLibrary\InstrObject\SignalGenerator-信号源%28射频微波信号发生器%29\RS-罗德与施瓦茨\SignalGeneratorSCPIBase_RS.cs" />
+    <Compile Include="InstrLibrary\InstrObject\SignalGenerator-信号源%28射频微波信号发生器%29\SignalGeneratorBase.cs" />
+    <Compile Include="InstrLibrary\InstrObject\SpectrumAnalyzer-频谱仪\CETC41-41所\SpectrumAnalyzerSCPIBase_CETC41.cs" />
+    <Compile Include="InstrLibrary\InstrObject\SpectrumAnalyzer-频谱仪\Keysight-是德科技\SpectrumAnalyzerSCPIBase_Keysight.cs" />
+    <Compile Include="InstrLibrary\InstrObject\SpectrumAnalyzer-频谱仪\RS-罗德与施瓦茨\SpectrumAnalyzerSCPIBase_RS.cs" />
+    <Compile Include="InstrLibrary\InstrObject\SpectrumAnalyzer-频谱仪\SpectrumAnalyzerBase.cs" />
+    <Compile Include="InstrLibrary\InstrObject\WaveformGenerator-波形发生器\Rigol-普源\WaveformGeneratorSCPIBase_Rigol.cs" />
+    <Compile Include="InstrLibrary\InstrObject\WaveformGenerator-波形发生器\WaveformGeneratorBase.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SplashScreen1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen1.Designer.cs">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestLibrary\TestBase.cs" />
+    <Compile Include="TestLibrary\隔离度.cs" />
+    <Compile Include="TestLibrary\驻波_相位_插损.cs" />
+    <Compile Include="Test指标.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saveall_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saveall_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loadfrom_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loadfrom_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splinearea_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splinearea_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\changechartseriestype_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\changechartseriestype_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textbox_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textbox_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textbox_32x322.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textbox_32x323.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\merge_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\merge_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\media_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\media_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon-20181129011336436.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
