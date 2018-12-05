@@ -78,11 +78,11 @@ namespace InstrLibrary.InstrDriver
         }
 
         /// <summary>
-        /// 返回字符串结果
+        /// 返回绝对值结果
         /// </summary>
         /// <param name="command"></param>
         /// <returns></returns>
-        public virtual string VisaRead(string command)
+        public virtual string VisaRead_Abs(string command)
         {
             _ViError = AgVisa32.viPrintf(_Session, command + "\n");
             string res = "";
@@ -90,7 +90,22 @@ namespace InstrLibrary.InstrDriver
             string[] resa = res.Split(',');
             res = resa[0];
             double dtmp = Math.Abs(double.Parse(res));
-            return dtmp.ToString("f2");
+            return dtmp.ToString("f1");
+        }
+
+        /// <summary>
+        /// 返回一位小数结果
+        /// </summary>
+        /// <param name="command"></param>
+        /// <returns></returns>
+        public virtual string VisaRead_1位小数(string command)
+        {
+            _ViError = AgVisa32.viPrintf(_Session, command + "\n");
+            string res = "";
+            AgVisa32.viRead(_Session, out res, 10000);
+            string[] resa = res.Split(',');
+            res = resa[0];
+            return double.Parse(res).ToString("f1");
         }
 
         /// <summary>

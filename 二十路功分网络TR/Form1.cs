@@ -10,12 +10,13 @@ using InstrLibrary.InstrObect;
 using DevExpress.XtraEditors;
 using 二十路功分网络TR.TestLibrary;
 using DevExpress.XtraBars;
+using 二十路功分网络TR.Modules;
 
 namespace 二十路功分网络TR
 {
     public partial class Form1 : DevExpress.XtraBars.Ribbon.RibbonForm
     {
-        public NetWorkAnalyzerBase _NetWork = new NetWorkAnalyzerBase("GPIB0::16::INSTR");
+        public NetWorkAnalyzerBase _NetWork ;
 
         public 驻波_相位_插损 Test驻波;
         public 隔离度 Test隔离度;
@@ -23,6 +24,9 @@ namespace 二十路功分网络TR
         public Form1()
         {
             InitializeComponent();
+
+            //仪表初始化
+            _NetWork = new NetWorkAnalyzerBase(Function_Module.GetConfig("矢网地址"));
 
             try
             {
@@ -33,6 +37,7 @@ namespace 二十路功分网络TR
                 XtraMessageBox.Show("仪表链接失败","提示",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
             
+            //测试初始化
             Test隔离度 = new 隔离度(_NetWork);
             Test驻波 = new 驻波_相位_插损(_NetWork);
         }
@@ -49,6 +54,11 @@ namespace 二十路功分网络TR
             {
                 switch (e.Item.Caption)
                 {
+                    case "地址配置":
+                        SettingsModule set = new SettingsModule();
+                        set.ShowDialog();
+                        break;
+
                     case "另存为":
                         this.saveFileDialog1.Filter = "2010 Excel文件|*.xlsx|97-2003 Excel文件|*.xls";
                         this.saveFileDialog1.FileName = spreadsheetControl1.Document.Worksheets[0].Cells["A7"].Value.ToString();
@@ -57,6 +67,10 @@ namespace 二十路功分网络TR
                             string path = this.saveFileDialog1.FileName;
                             this.spreadsheetControl1.Document.SaveDocument(path);
                         }
+                        break;
+
+                    case "打开”自动保存“目录":
+                        System.Diagnostics.Process.Start("Explorer", "/select," + Application.StartupPath + "\\" + "AutoSave.xlsx");
                         break;
 
                     case "驻波等-开始测试":
@@ -80,7 +94,6 @@ namespace 二十路功分网络TR
                                 IsTest = false;
                             }
                         }         
-
                         break;
 
                     case "IN口-开始测试":

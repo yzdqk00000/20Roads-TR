@@ -63,6 +63,16 @@ namespace 二十路功分网络TR.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap apply_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("apply_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap changechartseriestype_16x16 {
             get {
                 object obj = ResourceManager.GetObject("changechartseriestype_16x16", resourceCulture);
@@ -76,6 +86,26 @@ namespace 二十路功分网络TR.Properties {
         internal static System.Drawing.Bitmap changechartseriestype_32x32 {
             get {
                 object obj = ResourceManager.GetObject("changechartseriestype_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap converttoparagraphs_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("converttoparagraphs_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap converttoparagraphs_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("converttoparagraphs_32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,6 +193,26 @@ namespace 二十路功分网络TR.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap pagesetup_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("pagesetup_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap pagesetup_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("pagesetup_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap saveall_16x16 {
             get {
                 object obj = ResourceManager.GetObject("saveall_16x16", resourceCulture);
@@ -176,6 +226,26 @@ namespace 二十路功分网络TR.Properties {
         internal static System.Drawing.Bitmap saveall_32x32 {
             get {
                 object obj = ResourceManager.GetObject("saveall_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap sortbyinvoice_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("sortbyinvoice_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap sortbyinvoice_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("sortbyinvoice_32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

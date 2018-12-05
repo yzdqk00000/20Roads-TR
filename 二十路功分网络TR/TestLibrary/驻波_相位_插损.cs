@@ -29,11 +29,11 @@ namespace 二十路功分网络TR.TestLibrary
            
             List<double> list = new List<double>();
 
-            list.Add(double.Parse(_Net.VisaRead(_NetSCPI.CALC_SYSTEM.读取Mark的Y值(1, 4))));
+            list.Add(double.Parse(_Net.VisaRead_Abs(_NetSCPI.CALC_SYSTEM.读取Mark的Y值(1, 4))));
             
             _Net.VisaWrite(_NetSCPI.CALC_SYSTEM.选择测试窗口根据名称(1, WIN4));
 
-            list.Add(double.Parse(_Net.VisaRead(_NetSCPI.CALC_SYSTEM.读取Mark的Y值(1, 4))));
+            list.Add(double.Parse(_Net.VisaRead_Abs(_NetSCPI.CALC_SYSTEM.读取Mark的Y值(1, 4))));
             
             return list.Max();
         }
@@ -46,7 +46,7 @@ namespace 二十路功分网络TR.TestLibrary
             List<double> list = new List<double>();
             for (int i = 1; i <= 3; i++)
             {
-                list.Add(double.Parse(_Net.VisaRead(_NetSCPI.CALC_SYSTEM.读取Mark的Y值(1, i))));
+                list.Add(double.Parse(_Net.VisaRead_Abs(_NetSCPI.CALC_SYSTEM.读取Mark的Y值(1, i))));
             }
 
             return list.ToArray();
@@ -61,7 +61,7 @@ namespace 二十路功分网络TR.TestLibrary
             List<double> list = new List<double>();
             for (int i = 1; i <= 3; i++)
             {
-                list.Add(double.Parse(_Net.VisaRead(_NetSCPI.CALC_SYSTEM.读取Mark的Y值(1, i))));
+                list.Add(double.Parse(_Net.VisaRead_1位小数(_NetSCPI.CALC_SYSTEM.读取Mark的Y值(1, i))));
             }
 
             return list.ToArray();

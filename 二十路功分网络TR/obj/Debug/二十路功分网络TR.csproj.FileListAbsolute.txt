@@ -157,3 +157,5 @@ E:\[Catalog]_TEST\二十路功分网络TR\二十路功分网络TR\bin\Debug\ja\D
 E:\[Catalog]_TEST\二十路功分网络TR\二十路功分网络TR\bin\Debug\ru\DevExpress.XtraVerticalGrid.v17.1.resources.dll
 E:\[Catalog]_TEST\二十路功分网络TR\二十路功分网络TR\obj\Debug\二十路功分网络TR.SplashScreen1.resources
 E:\[Catalog]_TEST\二十路功分网络TR\二十路功分网络TR\obj\Debug\二十路功分网络TR.csprojResolveAssemblyReference.cache
+E:\[Catalog]_TEST\二十路功分网络TR\二十路功分网络TR\bin\Debug\二十路功分网络TR.exe.config
+E:\[Catalog]_TEST\二十路功分网络TR\二十路功分网络TR\obj\Debug\二十路功分网络TR.Modules.SettingsModule.resources

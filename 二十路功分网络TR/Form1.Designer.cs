@@ -51,6 +51,8 @@
             this.barEditItem_隔离度_索引号 = new DevExpress.XtraBars.BarEditItem();
             this.repositoryItemTextEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem_地址配置 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem1_自动保存 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -90,9 +92,11 @@
             this.barButtonItem10,
             this.barEditItem_隔离度_索引号,
             this.barButtonItem11,
-            this.barButtonItem12});
+            this.barButtonItem12,
+            this.barButtonItem_地址配置,
+            this.barButtonItem1_自动保存});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 14;
+            this.ribbonControl1.MaxItemId = 16;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
@@ -271,6 +275,24 @@
             this.barButtonItem11.Name = "barButtonItem11";
             this.barButtonItem11.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick);
             // 
+            // barButtonItem_地址配置
+            // 
+            this.barButtonItem_地址配置.Caption = "地址配置";
+            this.barButtonItem_地址配置.Id = 14;
+            this.barButtonItem_地址配置.ImageOptions.Image = global::二十路功分网络TR.Properties.Resources.pagesetup_16x16;
+            this.barButtonItem_地址配置.ImageOptions.LargeImage = global::二十路功分网络TR.Properties.Resources.pagesetup_32x32;
+            this.barButtonItem_地址配置.Name = "barButtonItem_地址配置";
+            this.barButtonItem_地址配置.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick);
+            // 
+            // barButtonItem1_自动保存
+            // 
+            this.barButtonItem1_自动保存.Caption = "打开”自动保存“目录";
+            this.barButtonItem1_自动保存.Id = 15;
+            this.barButtonItem1_自动保存.ImageOptions.Image = global::二十路功分网络TR.Properties.Resources.converttoparagraphs_16x16;
+            this.barButtonItem1_自动保存.ImageOptions.LargeImage = global::二十路功分网络TR.Properties.Resources.converttoparagraphs_32x32;
+            this.barButtonItem1_自动保存.Name = "barButtonItem1_自动保存";
+            this.barButtonItem1_自动保存.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick);
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -284,6 +306,8 @@
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem1);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem2);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem3);
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem_地址配置);
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem1_自动保存);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             this.ribbonPageGroup1.ShowCaptionButton = false;
             this.ribbonPageGroup1.Text = "常规操作";
@@ -375,6 +399,8 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem11;
         private DevExpress.XtraBars.BarButtonItem barButtonItem12;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem_地址配置;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1_自动保存;
     }
 }
 

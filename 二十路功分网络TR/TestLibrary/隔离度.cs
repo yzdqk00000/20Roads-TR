@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace 二十路功分网络TR.TestLibrary
@@ -26,12 +27,8 @@ namespace 二十路功分网络TR.TestLibrary
         {
             if (!IsLoad) {_Net.VisaWrite(_NetSCPI.MEMM_SYSTEM.载入Memory(PATH)) ; IsLoad = true; }
             _Net.VisaWrite(_NetSCPI.CALC_SYSTEM.选择测试窗口根据名称(1, WIN2));
-           
-            List<double> list = new List<double>();
-            list.Add(double.Parse(_Net.VisaRead(_NetSCPI.CALC_SYSTEM.读取Mark的Y值(1, 5))));
-            
-
-            return list.Max();
+            Thread.Sleep(1000);
+            return double.Parse(_Net.VisaRead_Abs(_NetSCPI.CALC_SYSTEM.读取Mark的Y值(1, 5)));
         }
 
 
