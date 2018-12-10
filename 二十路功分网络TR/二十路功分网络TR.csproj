@@ -10,8 +10,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>二十路功分网络TR</RootNamespace>
     <AssemblyName>二十路功分网络TR</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -118,11 +119,17 @@
     <Compile Include="InstrLibrary\InstrObject\SpectrumAnalyzer-频谱仪\SpectrumAnalyzerBase.cs" />
     <Compile Include="InstrLibrary\InstrObject\WaveformGenerator-波形发生器\Rigol-普源\WaveformGeneratorSCPIBase_Rigol.cs" />
     <Compile Include="InstrLibrary\InstrObject\WaveformGenerator-波形发生器\WaveformGeneratorBase.cs" />
-    <Compile Include="Modules\SettingsModule.cs">
+    <Compile Include="Modules\SettingsModule\SettingsModule.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modules\SettingsModule.Designer.cs">
+    <Compile Include="Modules\SettingsModule\SettingsModule.Designer.cs">
       <DependentUpon>SettingsModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\SettingsModule\Settings矢网_高级选项.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\SettingsModule\Settings矢网_高级选项.Designer.cs">
+      <DependentUpon>Settings矢网_高级选项.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -139,8 +146,11 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modules\SettingsModule.resx">
+    <EmbeddedResource Include="Modules\SettingsModule\SettingsModule.resx">
       <DependentUpon>SettingsModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\SettingsModule\Settings矢网_高级选项.resx">
+      <DependentUpon>Settings矢网_高级选项.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -156,7 +166,9 @@
     <EmbeddedResource Include="SplashScreen1.resx">
       <DependentUpon>SplashScreen1.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -223,6 +235,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon-20181129011336436.ico" />
+    <None Include="Resources\group2_32x32.png" />
     <None Include="Resources\converttoparagraphs_16x16.png" />
     <None Include="Resources\converttoparagraphs_32x32.png" />
     <None Include="Resources\sortbyinvoice_16x16.png" />

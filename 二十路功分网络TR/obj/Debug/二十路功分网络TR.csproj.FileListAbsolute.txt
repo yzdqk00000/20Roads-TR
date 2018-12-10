@@ -159,3 +159,4 @@ E:\[Catalog]_TEST\二十路功分网络TR\二十路功分网络TR\obj\Debug\二�
 E:\[Catalog]_TEST\二十路功分网络TR\二十路功分网络TR\obj\Debug\二十路功分网络TR.csprojResolveAssemblyReference.cache
 E:\[Catalog]_TEST\二十路功分网络TR\二十路功分网络TR\bin\Debug\二十路功分网络TR.exe.config
 E:\[Catalog]_TEST\二十路功分网络TR\二十路功分网络TR\obj\Debug\二十路功分网络TR.Modules.SettingsModule.resources
+E:\[Catalog]_TEST\二十路功分网络TR\二十路功分网络TR\obj\Debug\二十路功分网络TR.Modules.Settings矢网_高级选项.resources

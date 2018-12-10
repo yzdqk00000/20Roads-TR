@@ -97,7 +97,7 @@ namespace 二十路功分网络TR
                         break;
 
                     case "IN口-开始测试":
-                        double zhubo2 = Test驻波.驻波测试();
+                        double zhubo2 = Test驻波.总口驻波测试();
                         spreadsheetControl1.Document.Worksheets[0].Cells["C" + 27].Value = zhubo2.ToString("f2");
                         spreadsheetControl1.Document.Worksheets[0].Cells["C" + 27].FillColor = zhubo2 <= 1.5 ? Color.White : Color.Red;
                         break;
@@ -122,7 +122,6 @@ namespace 二十路功分网络TR
                             {
                                 IsTest = false;
                             }
-
                         }
                         IsTest = true;
 
@@ -142,8 +141,7 @@ namespace 二十路功分网络TR
         /// 报表载入菜单
         /// </summary>
         /// <param name="sender"></param>
-        /// <param name="e"></param>
-        
+        /// <param name="e"></param>     
         private void barButtonItem6_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             switch (e.Item.Caption)
@@ -201,7 +199,7 @@ namespace 二十路功分网络TR
         {
             spreadsheetControl1.BeginUpdate();
 
-            double zhubo = Test驻波.驻波测试();
+            double zhubo = Test驻波.普通口驻波测试();
 
             spreadsheetControl1.Document.Worksheets[0].Cells["C" + barEditItem_驻波_索引号.EditValue].Value = zhubo;
             spreadsheetControl1.Document.Worksheets[0].Cells["C" + barEditItem_驻波_索引号.EditValue].FillColor = zhubo <= Test指标.驻波 ? Color.White : Color.Red;

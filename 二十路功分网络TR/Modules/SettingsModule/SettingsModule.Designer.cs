@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SettingsModule));
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.textEdit_矢网地址 = new DevExpress.XtraEditors.TextEdit();
+            this.simpleButton_高级选项_矢网 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit_矢网地址.Properties)).BeginInit();
             this.SuspendLayout();
@@ -49,15 +50,27 @@
             // 
             this.textEdit_矢网地址.Location = new System.Drawing.Point(119, 53);
             this.textEdit_矢网地址.Name = "textEdit_矢网地址";
-            this.textEdit_矢网地址.Size = new System.Drawing.Size(274, 20);
+            this.textEdit_矢网地址.Size = new System.Drawing.Size(190, 20);
             this.textEdit_矢网地址.TabIndex = 1;
+            // 
+            // simpleButton_高级选项_矢网
+            // 
+            this.simpleButton_高级选项_矢网.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton_高级选项_矢网.Appearance.Options.UseFont = true;
+            this.simpleButton_高级选项_矢网.ImageOptions.Image = global::二十路功分网络TR.Properties.Resources.group2_32x32;
+            this.simpleButton_高级选项_矢网.Location = new System.Drawing.Point(337, 43);
+            this.simpleButton_高级选项_矢网.Name = "simpleButton_高级选项_矢网";
+            this.simpleButton_高级选项_矢网.Size = new System.Drawing.Size(101, 39);
+            this.simpleButton_高级选项_矢网.TabIndex = 3;
+            this.simpleButton_高级选项_矢网.Text = "高级选项";
+            this.simpleButton_高级选项_矢网.Click += new System.EventHandler(this.simpleButton_高级选项_矢网_Click);
             // 
             // simpleButton1
             // 
             this.simpleButton1.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton1.Appearance.Options.UseFont = true;
             this.simpleButton1.ImageOptions.Image = global::二十路功分网络TR.Properties.Resources.apply_32x32;
-            this.simpleButton1.Location = new System.Drawing.Point(295, 149);
+            this.simpleButton1.Location = new System.Drawing.Point(302, 229);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
             this.simpleButton1.Size = new System.Drawing.Size(136, 49);
@@ -69,7 +82,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(472, 232);
+            this.ClientSize = new System.Drawing.Size(472, 305);
+            this.Controls.Add(this.simpleButton_高级选项_矢网);
             this.Controls.Add(this.simpleButton1);
             this.Controls.Add(this.textEdit_矢网地址);
             this.Controls.Add(this.labelControl1);
@@ -88,5 +102,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.TextEdit textEdit_矢网地址;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton_高级选项_矢网;
     }
 }

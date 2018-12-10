@@ -118,8 +118,14 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="merge_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\merge_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="media_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\media_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="converttoparagraphs_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\converttoparagraphs_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="media_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\media_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -129,9 +135,6 @@
   </data>
   <data name="textbox_32x321" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\textbox_32x321.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="textbox_32x323" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\textbox_32x323.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="new_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\new_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,9 +151,6 @@
   <data name="apply_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\apply_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="loadfrom_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\loadfrom_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="changechartseriestype_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\changechartseriestype_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -163,6 +163,9 @@
   <data name="changechartseriestype_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\changechartseriestype_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="textbox_32x322" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\textbox_32x322.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="saveall_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\saveall_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -172,14 +175,14 @@
   <data name="splinearea_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\splinearea_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="merge_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\merge_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="textbox_32x323" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\textbox_32x323.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pagesetup_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pagesetup_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="textbox_32x322" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\textbox_32x322.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="loadfrom_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loadfrom_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="merge_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\merge_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,7 +193,7 @@
   <data name="textbox_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\textbox_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="converttoparagraphs_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\converttoparagraphs_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="group2_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\group2_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -93,19 +93,31 @@ namespace InstrLibrary.InstrDriver
             return dtmp.ToString("f1");
         }
 
-        /// <summary>
-        /// 返回一位小数结果
-        /// </summary>
-        /// <param name="command"></param>
-        /// <returns></returns>
-        public virtual string VisaRead_1位小数(string command)
+        public virtual string VisaRead_Abs_两位(string command)
         {
             _ViError = AgVisa32.viPrintf(_Session, command + "\n");
             string res = "";
             AgVisa32.viRead(_Session, out res, 10000);
             string[] resa = res.Split(',');
             res = resa[0];
-            return double.Parse(res).ToString("f1");
+            double dtmp = Math.Abs(double.Parse(res));
+            return dtmp.ToString("f2");
+        }
+
+        /// <summary>
+        /// 返回一位小数结果
+        /// </summary>
+        /// <param name="command"></param>
+        /// <returns></returns>
+        public virtual string VisaRead_取整(string command)
+        {
+            _ViError = AgVisa32.viPrintf(_Session, command + "\n");
+            string res = "";
+            AgVisa32.viRead(_Session, out res, 10000);
+            string[] resa = res.Split(',');
+            res = resa[0];
+            double s = Math.Round(double.Parse(res));
+            return s.ToString("f0");
         }
 
         /// <summary>
