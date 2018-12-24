@@ -28,8 +28,13 @@ namespace 二十路功分网络TR.TestLibrary
             if (!IsLoad) {_Net.VisaWrite(_NetSCPI.MEMM_SYSTEM.载入Memory(PATH)) ; IsLoad = true; }
             _Net.VisaWrite(_NetSCPI.CALC_SYSTEM.选择测试窗口根据名称(1, WIN2));
             Thread.Sleep(1000);
-            double res = Math.Round(double.Parse(_Net.VisaRead_Abs(_NetSCPI.CALC_SYSTEM.读取Mark的Y值(1, 5))));
-            return res;
+            List<double> list = new List<double>();
+            for (int i = 1; i <= 3; i++)
+            {
+                list.Add(double.Parse(_Net.VisaRead_Abs(_NetSCPI.CALC_SYSTEM.读取Mark的Y值(1, i))));
+            }
+            return list.Min();
+      
         }
 
 

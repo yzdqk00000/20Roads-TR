@@ -33,7 +33,7 @@ namespace 二十路功分网络TR.TestLibrary
     
             List<double> list = new List<double>();
 
-            for (int i = 1; i <= 4; i++)
+            for (int i = 1; i <= 3; i++)
             {
                 list.Add(double.Parse(_Net.VisaRead_Abs_两位(_NetSCPI.CALC_SYSTEM.读取Mark的Y值(1, i))));
             }
