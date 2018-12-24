@@ -99,7 +99,7 @@ namespace 二十路功分网络TR
                     case "IN口-开始测试":
                         double zhubo2 = Test驻波.总口驻波测试();
                         spreadsheetControl1.Document.Worksheets[0].Cells["C" + 27].Value = zhubo2.ToString("f2");
-                        spreadsheetControl1.Document.Worksheets[0].Cells["C" + 27].FillColor = zhubo2 <= 1.5 ? Color.White : Color.Red;
+                        spreadsheetControl1.Document.Worksheets[0].Cells["C" + 27].FillColor = zhubo2 <= Test指标.驻波 ? Color.White : Color.Red;
                         break;
 
                     case "隔离度-开始测试":
